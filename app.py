@@ -28,7 +28,7 @@ def render_menu_page():
     product_list = cur.fetchall()
     print(product_list)
     con.close()
-    return render_template('menu.html')
+    return render_template('menu.html', products=product_list)
 
 
 @app.route('/contact')
