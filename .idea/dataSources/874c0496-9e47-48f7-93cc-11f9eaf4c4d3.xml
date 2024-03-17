@@ -1471,53 +1471,87 @@
     <table id="519" parent="177" name="sqlite_master">
       <System>1</System>
     </table>
-    <column id="520" parent="518" name="id">
+    <table id="520" parent="177" name="sqlite_sequence">
+      <System>1</System>
+    </table>
+    <table id="521" parent="177" name="users"/>
+    <column id="522" parent="518" name="id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="521" parent="518" name="name">
+    <column id="523" parent="518" name="name">
       <DasType>VARCHAR(30)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="522" parent="518" name="description">
+    <column id="524" parent="518" name="description">
       <DasType>VARCHAR(300)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="523" parent="518" name="volume">
+    <column id="525" parent="518" name="volume">
       <DasType>CHAR(6)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="524" parent="518" name="image">
+    <column id="526" parent="518" name="image">
       <DasType>VARCHAR(30)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="525" parent="518" name="price">
+    <column id="527" parent="518" name="price">
       <DasType>INTEGER|0s</DasType>
       <Position>6</Position>
     </column>
-    <key id="526" parent="518">
+    <key id="528" parent="518">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="527" parent="519" name="type">
+    <column id="529" parent="519" name="type">
       <DasType>TEXT|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="528" parent="519" name="name">
+    <column id="530" parent="519" name="name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="529" parent="519" name="tbl_name">
+    <column id="531" parent="519" name="tbl_name">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="530" parent="519" name="rootpage">
+    <column id="532" parent="519" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="531" parent="519" name="sql">
+    <column id="533" parent="519" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
+    <column id="534" parent="520" name="name">
+      <Position>1</Position>
+    </column>
+    <column id="535" parent="520" name="seq">
+      <Position>2</Position>
+    </column>
+    <column id="536" parent="521" name="fname">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="537" parent="521" name="lname">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="538" parent="521" name="email">
+      <DasType>varhcar|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="539" parent="521" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <key id="540" parent="521" name="id">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
